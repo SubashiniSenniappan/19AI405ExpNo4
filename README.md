@@ -1,10 +1,16 @@
-ExpNo 4 : Implement A* search algorithm for a Graph
-Name: S.Subashini
-Register Number: 212222240106
-Aim:
+```
+# ExpNo 4 : Implement A* search algorithm for a Graph
+
+## NAME : ABRIN NISHA A
+## REG NO : 212222230005
+
+## Aim :
+
 To ImplementA * Search algorithm for a Graph using Python 3.
 
-Algorithm:
+## Algorithm :
+
+```
 // A* Search Algorithm
 1.  Initialize the open list
 2.  Initialize the closed list
@@ -37,7 +43,11 @@ Algorithm:
      end (for loop)
     e) push q on the closed list
     end (while loop)
-PROGRAM:
+```
+
+## PROGRAM :
+
+```
 from collections import defaultdict
 H_dist ={}
 def aStarAlgo(start_node, stop_node):
@@ -47,6 +57,8 @@ def aStarAlgo(start_node, stop_node):
     parents = {}         # parents contains an adjacency map of all nodes
     #distance of starting node from itself is zero
     g[start_node] = 0
+```
+```
 #start_node is root node i.e it has no parent nodes
 #so start_node is set to its own parent node
 
@@ -101,6 +113,8 @@ while len(open_set) > 0:
     closed_set.add(n)
 print('Path does not exist!')
 return None
+```
+```
 
 
 #define fuction to return neighbor and its distance
@@ -139,23 +153,68 @@ print(H_dist)
 Graph_nodes=graph
 print(graph)
 aStarAlgo('S', 'G')
-Sample Graph I:
-image
+```
+## Sample Graph I :
 
-Sample Input:
-10 14 A B 6 A F 3 B D 2 B C 3 C D 1 C E 5 D E 8 E I 5 E J 5 F G 1 G I 3 I J 3 F H 7 I H 2 A 10 B 8 C 5 D 7 E 3 F 6 G 5 H 3 I 1 J 0
+![image](https://github.com/22008686/19AI405ExpNo4/assets/118916413/25326942-3034-4607-8da1-eb110ae5752a)
 
-Sample Output:
+## Sample Input :
+
+10 14
+A B 6
+A F 3
+B D 2
+B C 3
+C D 1
+C E 5
+D E 8
+E I 5
+E J 5
+F G 1
+G I 3
+I J 3
+F H 7
+I H 2
+A 10
+B 8
+C 5
+D 7
+E 3
+F 6
+G 5
+H 3
+I 1
+J 0
+
+## Sample Output :
+
 Path found: ['A', 'F', 'G', 'I', 'J']
 
-Sample Graph II:
-image
+## Sample Graph II :
 
-Sample Input:
-6 6 A B 2 B C 1 A E 3 B G 9 E D 6 D G 1 A 11 B 6 C 99 E 7 D 1 G 0
+![image](https://github.com/22008686/19AI405ExpNo4/assets/118916413/f4e348fe-235e-4b57-8d62-024f97003ba6)
 
-Sample Output:
+## Sample Input :
+
+6 6
+A B 2
+B C 1
+A E 3
+B G 9
+E D 6
+D G 1
+A 11
+B 6
+C 99
+E 7
+D 1
+G 0
+
+## Sample Output :
+
 Path found: ['A', 'E', 'D', 'G']
 
-RESULT:
+## RESULT :
+
 Implementing A * Search algorithm for a Graph using Python 3. is executed successfully.
+```
