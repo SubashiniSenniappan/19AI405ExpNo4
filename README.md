@@ -1,8 +1,8 @@
-```
+
 # ExpNo 4 : Implement A* search algorithm for a Graph
 
-## NAME : ABRIN NISHA A
-## REG NO : 212222230005
+## NAME : SUBASHINI S
+## REG NO : 212222240106
 
 ## Aim :
 
@@ -217,4 +217,4 @@ Path found: ['A', 'E', 'D', 'G']
 ## RESULT :
 
 Implementing A * Search algorithm for a Graph using Python 3. is executed successfully.
-```
+
